@@ -4,7 +4,7 @@
 #include "io.h"
 #include "rank.h"
 
-int main(int argc, char ** argv){
+int main(int argc, char **argv){
     if(argc < 2) exit(-1);
     struct list_t * G = read_graph(argv[1]);
     printf("Liste des tâches lue\n");
