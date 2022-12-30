@@ -14,13 +14,19 @@ void clean ( struct list_t *L );
 bool is_empty ( struct list_t *L );
 
 // Donne la tête de la liste L
-struct elmlist_t *get_head ( struct list_t *L );
+struct elmlist_t *get_head ( struct list_t *L ) {
+    return L->head;
+}
 
 // Donne la queue de la liste L
-struct elmlist_t *get_tail ( struct list_t *L );
+struct elmlist_t *get_tail ( struct list_t *L ) {
+    return L->tail;
+}
 
 // Donne le nombre d'élément de L
-int get_numelm ( struct list_t *L ) ;
+int get_numelm ( struct list_t *L ) {
+    return L->numelm;
+}
 
 // Retire la donnée D de la liste L si elle est présente
 void take_out ( struct list_t *L , void *D );
